@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #222831;
+  --color-white: #eeeeee;
+  --color-secondery: #00adb5;
+  --color-black: #000000;
+  --font-poppins: "Poppins", sans-serif;
+
+}
+
+
+
+@layer components {
+  .container {
+    @apply mx-auto !max-w-[1200px] px-2.5 xl:px-0;
+  }
+
+  .list {
+    @apply text-lg font-normal text-white;
+  }
+
+  .bannerTitle{
+    @apply text-white text-4xl lg:text-8xl lg:leading-24 font-bold mb-6 lg:mb-12
+  }
+
+  .button{
+    @apply flex justify-center lg:justify-start gap-4 lg:gap-6
+  }
+
+  .btn {
+    @apply hover:bg-secondery rounded-3xl bg-[#393E46BF] px-4 lg:px-8 py-1.5 lg:py-2.5 text-lg font-bold text-white duration-500;
+  }
+
+  .heading{
+    @apply text-4xl lg:text-[64px] text-white font-bold mb-5 lg:mb-0
+  }
+  
+  .para{
+    @apply mx-auto lg:mx-0 lg:max-w-[389px] text-[18px] text-white
+  }
+
+  .mylist{
+    @apply lg:text-lg text-white font-bold px-2 lg:px-8 py-1 lg:py-2.5 bg-[#393E46]/50 rounded-[50px] hover:bg-secondery duration-500
+  }
+
+  .myItem{
+    @apply px-[51px] py-[61px] bg-[#393E46]/50 rounded-2xl
+  }
+
+  .labeltitle{
+    @apply text-lg text-white font-bold mb-2.5
+  }
+
+  .input{
+    @apply bg-[#393E46]/50 py-3 lg:py-4 pl-6 w-full lg:w-[288px] rounded-2xl text-white/50 text-lg font-bold
+  }
+}
