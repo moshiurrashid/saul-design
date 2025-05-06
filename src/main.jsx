@@ -5,6 +5,8 @@ import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import About from "./components/About.jsx";
 import Rootlayout from "./layout/Rootlayout.jsx";
+import Home from "./components/pages/Home";
+import firebaseConfig from "./firebase.config.js";
 
 const router = createBrowserRouter([
   {
@@ -24,7 +26,5 @@ const router = createBrowserRouter([
 ]);
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>,
+  <RouterProvider router={router} />,
 );
